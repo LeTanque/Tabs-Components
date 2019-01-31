@@ -1,3 +1,28 @@
 @lambda-red: rgb(147,29,37);
 @lambda-light-red: lighten(@lambda-red,10%);
 @white: rgb(255,255,255);
+@gray: #c4c4c4;
+
+
+// Transition duration
+.transition(@duration) {
+    -webkit-transition-duration: @duration;
+    -moz-transition-duration: @duration;
+    transition-duration: @duration;
+}
+
+// Fonts
+@font-primary: 'IBM Plex Sans', sans-serif;
+@font-mono: monospace;
+
+.font-title(@style) {
+    font-family: @style;
+    font-weight: 700;
+}
+.font-body(@style) {
+    font-family: @style;
+    font-weight: 400;
+}
+
+// Styling 
+@basic-box-shadow: 1px 1px 5px @lambda-red;

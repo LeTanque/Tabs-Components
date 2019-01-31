@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;  
   background-color: @lambda-red;
+  border-bottom: 10px solid @lambda-light-red;
   .header {
     height: 50px;
   }
@@ -31,16 +33,17 @@ body {
   width: 70%;
   margin: 45px auto;
   display: flex;
-  border: 1px solid @lambda-red;
-  box-shadow: 1px 1px 5px @lambda-red;
-  border-radius: 10px;
+  border: 0px solid @lambda-red;
+  box-shadow: @basic-box-shadow;
+  border-radius: 0px;
   overflow: hidden;
+  .font-body(@font-primary);
   .box {
     padding: 40px;
     .box-title {
       font-size: 24px;
       padding-bottom: 10px;
-      font-weight: bold;
+      .font-title(@font-primary);
     }
   }
 }
